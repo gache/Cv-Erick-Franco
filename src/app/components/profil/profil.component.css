@@ -1,3 +1,39 @@
-.quiene-somos {
-    background: url(../../../assets/img/foto1.jpg);
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+:after,
+ :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #EEEEEE;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.definition {
+    margin-top: 3rem;
+}
+
+.facts-section {
+    background: url(../../../assets/img/digital.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
 }
