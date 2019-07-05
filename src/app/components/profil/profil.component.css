@@ -36,4 +36,14 @@ h2 {
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
+    overflow: scroll;
+}
+
+.count-wrap i {
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+
+section {
+    text-align: center;
 }
