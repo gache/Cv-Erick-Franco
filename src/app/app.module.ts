@@ -9,6 +9,10 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProfilComponent } from './components/profil/profil.component';
 import { ParcoursComponent } from './components/parcours/parcours.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CompetencesComponent } from './components/competences/competences.component';
+
+
 
 
 @NgModule({
@@ -18,6 +22,9 @@ import { ParcoursComponent } from './components/parcours/parcours.component';
     FooterComponent,
     ProfilComponent,
     ParcoursComponent,
+    ContactComponent,
+    CompetencesComponent,
+
 
   ],
   imports: [
