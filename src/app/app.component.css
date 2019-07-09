@@ -8,6 +8,10 @@
     background-color: #fff;
 }
 
+.blank2 {
+    background-color: #fff;
+}
+
 .photo {
     background: url(../assets/img/photo1.jpg);
     background-size: cover;
@@ -20,4 +24,13 @@
     overflow: scroll;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.titre {
+    position: absolute;
+    z-index: 1;
+    margin-top: 300px;
+    margin-left: 28%;
+    font-size: 49px;
+    color: chartreuse;
 }

@@ -1,57 +1,46 @@
-<section>
+<div class="container wrapper">
+    <h2 class="text-center text-uppercase" style="visibility: visible;"> Rester en contact</h2>
     <form>
-        <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-            </div>
-        </div>
-        <fieldset class="form-group">
-            <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                        <label class="form-check-label" for="gridRadios1">
-            First radio
-          </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-            Second radio
-          </label>
-                    </div>
-                    <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                        <label class="form-check-label" for="gridRadios3">
-            Third disabled radio
-          </label>
-                    </div>
+        <div>
+            <div class="form-group row">
+                <label class="col-2 col-form-label text-uppercase"> Nom </label>
+                <div class="col-8">
+                    <input class="form-control col-9 " type="text" placeholder="Nom">
                 </div>
             </div>
-        </fieldset>
-        <div class="form-group row">
-            <div class="col-sm-2">Checkbox</div>
-            <div class="col-sm-10">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-          Example checkbox
-        </label>
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label text-uppercase">Prénom</label>
+                <div class="col-8">
+                    <input class="form-control col-9" type="text" placeholder="Prénom">
                 </div>
             </div>
+
         </div>
+
         <div class="form-group row">
-            <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+            <label class="col-2 col-form-label text-uppercase">Email</label>
+            <div class="col-md-8">
+                <input class="form-control col-9" type="email" placeholder="Email: lille@gmail.com">
             </div>
         </div>
+
+        <div class="form-group row ">
+            <label class="col-2 col-form-label text-uppercase" for="message"> Message</label>
+            <div class="col-md-8">
+                <textarea class="form-control col-9  " id="message " rows="5" formControlName="description" placeholder="Nous aimerions vous contacter à fin de ...."> </textarea>
+            </div>
+        </div>
+
+        <div class="form-group row ">
+            <label class="col-2 col-form-label ">&nbsp;</label>
+            <div class="input-group col-md-9 ">
+                <button type="submit " class="btn btn-outline-primary ">
+          Envoyer
+        </button>
+            </div>
+        </div>
+
     </form>
-</section>
+
+</div>
