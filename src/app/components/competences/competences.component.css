@@ -1,5 +1,9 @@
 .competences {
-    background-color: #000;
+    background: url(../../../assets/img/fond2.jpg) no-repeat center 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    overflow: hidden;
 }
 
 .col-md-6 {
@@ -21,10 +25,12 @@ h3 {
     text-align: center;
     color: #fff;
 }
+
 .progress {
     margin: auto;
     width: 50%;
 }
+
 .skill-title {
     margin-bottom: 10px;
 }
