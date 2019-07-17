@@ -72,6 +72,7 @@ h2 {
     background-attachment: fixed;
     color: #ffffff;
     overflow: hidden;
+    margin-top: 3rem;
 }
 
 .count-wrap {
@@ -96,6 +97,9 @@ section {
 }
 
 
-/* .reseaux {
+/*
+section {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 } */
