@@ -10,7 +10,18 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
 
+  isInImage: boolean = true;
+
   ngOnInit() {
+    window.addEventListener("scroll", ($event) => { this.onScroll($event) });
+  }
+
+  onScroll($event) {
+    if (window.scrollY <= window.innerHeight) {
+      this.isInImage = true;
+    } else {
+      this.isInImage = false;
+    }
   }
 
 }

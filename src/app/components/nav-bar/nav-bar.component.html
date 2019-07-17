@@ -1,7 +1,7 @@
 <section class="fond">
     <div class="container-fluid">
         <header class="tête">
-            <nav class="menu navbar fixed-top navbar-expand-lg ">
+            <nav class="menu navbar fixed-top navbar-expand-lg" [ngClass]='{"inImage":isInImage,"outImage":!isInImage}'>
                 <a class="navbar-brand" href="#">Erick Franco</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal" aria-controls="nav-principal" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

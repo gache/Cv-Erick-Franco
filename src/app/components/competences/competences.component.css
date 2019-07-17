@@ -16,3 +16,15 @@
     margin-top: -6px;
     text-transform: capitalize;
 }
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+.progress {
+    margin: auto;
+    width: 50%;
+}
+.skill-title {
+    margin-bottom: 10px;
+}
