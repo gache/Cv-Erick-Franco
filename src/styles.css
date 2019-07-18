@@ -46,3 +46,7 @@ footer {
 .fadeIn {
     animation-name: fadeIn;
 }
+
+body > div:last-of-type {
+    visibility: hidden;
+}
