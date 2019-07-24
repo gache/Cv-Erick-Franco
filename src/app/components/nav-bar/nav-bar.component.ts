@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { ScrollEventService } from 'src/app/services/scroll-event.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,21 +8,26 @@ import * as $ from 'jquery';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollEventService: ScrollEventService) { }
 
-  isInImage: boolean = true;
+  isInImage = true;
 
   ngOnInit() {
-    window.addEventListener("scroll", ($event) => { this.onScroll($event) });
+    // window.addEventListener("scroll", ($event) => { this.onScroll($event) });
   }
 
-  onScroll($event) {
-    if (window.scrollY <= window.innerHeight) {
-      this.isInImage = true;
-    } else {
-      this.isInImage = false;
-    }
+  // onScroll($event) {
+  //   if (window.scrollY <= window.innerHeight) {
+  //     this.isInImage = true;
+  //   } else {
+  //     this.isInImage = false;
+  //   }
+  // }
+
+  scroll(id: string) {
+    this.scrollEventService.sendMessage(id);
   }
+
 
 }
 
