@@ -11,6 +11,8 @@ import { ProfilComponent } from './components/profil/profil.component';
 import { ParcoursComponent } from './components/parcours/parcours.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CompetencesComponent } from './components/competences/competences.component';
+import { ReseauxComponent } from './components/reseaux/reseaux.component';
+import { PropoComponent } from './components/propo/propo.component';
 
 
 
@@ -24,6 +26,8 @@ import { CompetencesComponent } from './components/competences/competences.compo
     ParcoursComponent,
     ContactComponent,
     CompetencesComponent,
+    ReseauxComponent,
+    PropoComponent,
 
 
   ],

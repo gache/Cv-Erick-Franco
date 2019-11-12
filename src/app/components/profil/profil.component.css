@@ -54,24 +54,16 @@ h2 {
     box-sizing: border-box;
 }
 
-.card {
+
+/* .card {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 1px solid #EEEEEE;
     position: relative;
     margin-top: 3rem;
-}
+} */
 
 .definition {
-    margin-top: 3rem;
-}
-
-.facts-section {
-    background: url(../../../assets/img/digital.jpg) no-repeat center 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #ffffff;
-    overflow: hidden;
     margin-top: 3rem;
 }
 
@@ -86,14 +78,6 @@ h2 {
 
 section {
     text-align: center;
-}
-
-
-/* les icones */
-
-.fa-linkedin-in,
-.fa-github {
-    color: black;
 }
 
 

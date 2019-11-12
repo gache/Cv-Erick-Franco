@@ -1,0 +1,10 @@
+/* Photo de fond */
+
+.facts-section {
+    background: url(../../../assets/img/digital.jpg) no-repeat center 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    overflow: hidden;
+    margin-top: 3rem;
+}
