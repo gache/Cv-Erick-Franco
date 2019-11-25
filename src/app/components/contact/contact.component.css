@@ -1,7 +1,14 @@
+section{
+    background-color: #f2f2f2;
+}
 .facts-section {
     background: url(../../../assets/img/digital2.jpg) no-repeat center 50%;
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
-    overflow: scroll;
+    overflow: hidden;
+}
+
+label{
+    text-align: right;
 }

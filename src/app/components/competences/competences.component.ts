@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjetService } from '../../services/projet.service';
+import { Projet } from '../../entities/projets';
+
+
 
 @Component({
   selector: 'app-competences',
@@ -7,7 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompetencesComponent implements OnInit {
 
-  constructor() { }
+  projets: Projet[]= [];
+
+  constructor(private projetServices: ProjetService) {
+    this.projets = this.projetServices.getProjet();
+
+  }
 
   ngOnInit() {
   }

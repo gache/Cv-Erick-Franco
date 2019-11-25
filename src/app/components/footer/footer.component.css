@@ -4,8 +4,12 @@
     height: 100px;
     background-color: #1a1e23;
     color: #ffffff;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    background-color: #f2f2f2;
 }

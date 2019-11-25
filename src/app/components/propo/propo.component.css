@@ -1,3 +1,8 @@
+section{
+    background-color: #f2f2f2;
+}
+
+
 /* Photo de fond */
 
 .facts-section {
@@ -6,5 +11,24 @@
     background-attachment: fixed;
     color: #ffffff;
     overflow: hidden;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+}
+
+
+/*  Contenedor flex */
+
+.container-flex {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+    .objectif {
+        flex: 0 0 70%;
+    }
+    .card {
+        flex: 0 0 30%;
+    }
 }
