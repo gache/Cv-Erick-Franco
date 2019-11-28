@@ -1,6 +1,11 @@
 <section class="competences section-padding py-5">
   <div class="container">
-    <h2 class=" competences1 text-uppercase" style="visibility: visible;">
+    <h2 class=" competences1 text-uppercase" style="visibility: visible;"
+    [ngsReveal]="{
+      reset: true,
+      duration: 2000,
+      interval: 600
+    }">
       compétences
     </h2>
   </div>
@@ -127,14 +132,29 @@
 </section>
 
 <section class="py-3">
-  <div class="container">
+  <div class="container" [ngsReveal]="{
+    reset: true,
+    duration: 2000,
+    interval: 600
+  }">
     <h2>Projets</h2>
   </div>
 
   <div class="container-flex">
-    <div class="card-columns">
-      <div class="card " *ngFor="let projet of projets">
-        <div class="card-body ">
+    <div class="card-columns" >
+      <div
+        class="card " 
+        *ngFor="let projet of projets"
+        [ngsReveal]="{
+          reset: true,
+          duration: 2000,
+          interval: 600,
+          delay: 250,
+          easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+          scale: 0.85
+        }"
+        >
+        <div class="card-body " >
           <h5 class="card-title">{{ projet.nom }}</h5>
           <p class="card-text">{{ projet.description }}</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>

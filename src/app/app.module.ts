@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+// Modules
+import {NgsRevealModule} from 'ngx-scrollreveal';
+import {NgsRevealConfig} from 'ngx-scrollreveal';
+import { StickyNavModule } from 'ng2-sticky-nav';
+
 
 // Components
 import { AppComponent } from './app.component';
@@ -14,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CompetencesComponent } from './components/competences/competences.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { PropoComponent } from './components/propo/propo.component';
+import { from } from 'rxjs';
 
 
 
@@ -28,18 +34,18 @@ import { PropoComponent } from './components/propo/propo.component';
     ContactComponent,
     CompetencesComponent,
     ReseauxComponent,
-    PropoComponent,
-
+    PropoComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    NgsRevealModule,
+    StickyNavModule
   ],
-  providers: [],
+  providers: [NgsRevealConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

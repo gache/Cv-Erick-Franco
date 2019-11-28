@@ -94,6 +94,7 @@ h3 {
   }
   .card {
     flex: 0 1 calc(50% - 1rem);
+    visibility: hidden;
   }
   @media (min-width: 768px) {
     .card {

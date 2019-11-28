@@ -2,7 +2,14 @@
 <section class="profil p-y-2 about-section section-padding">
 
     <div class="container-fluid ">
-        <h2 class="text-center text-uppercase fadeInUp animated animated" style="Visibility: visible;"> à propos de moi</h2>
+        <h2 class="text-center text-uppercase "
+            style="Visibility: visible;"
+            [ngsReveal]="{
+                reset: true,
+                duration: 2000,
+                interval: 600
+              }"
+            > à propos de moi</h2>
     </div>
     <div class="container">
         <div class="container-flex ">

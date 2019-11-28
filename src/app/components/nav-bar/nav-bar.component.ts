@@ -13,16 +13,16 @@ export class NavBarComponent implements OnInit {
   isInImage = true;
 
   ngOnInit() {
-    // window.addEventListener("scroll", ($event) => { this.onScroll($event) });
+    window.addEventListener("scroll", ($event) => { this.onScroll($event) });
   }
 
-  // onScroll($event) {
-  //   if (window.scrollY <= window.innerHeight) {
-  //     this.isInImage = true;
-  //   } else {
-  //     this.isInImage = false;
-  //   }
-  // }
+  onScroll($event) {
+    if (window.scrollY <= window.innerHeight) {
+      this.isInImage = true;
+    } else {
+      this.isInImage = false;
+    }
+  }
 
   scroll(id: string) {
     this.scrollEventService.sendMessage(id);

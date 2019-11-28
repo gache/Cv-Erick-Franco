@@ -25,7 +25,7 @@ export class ProjetService {
 
     },
     {
-      nom: 'Formulaire Angular',
+      nom: 'Creation Formulaire Angular',
       description: 'lorem ipsum  This card has supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     },
     {
