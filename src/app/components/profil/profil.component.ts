@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-profil',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilComponent implements OnInit {
 
+  @Output() scrollToParent: EventEmitter<string> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  scrollTo(id) {
+    this.scrollToParent.emit(id);
   }
 
 }

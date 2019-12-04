@@ -1,7 +1,8 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, ViewChild, ElementRef, ViewChildren } from '@angular/core';
 import { ScrollEventService } from './services/scroll-event.service';
 import { Subscription } from 'rxjs';
-import {NgsRevealConfig} from 'ngx-scrollreveal';
+import { NgsRevealConfig } from 'ngx-scrollreveal';
+import { CompileShallowModuleMetadata } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -14,11 +15,8 @@ export class AppComponent implements OnDestroy {
   title = 'erickFranco';
   souscription: Subscription;
 
-  constructor(private scrollEventService: ScrollEventService,
-              private config: NgsRevealConfig) {
-    this.souscription = this.scrollEventService.getMessage().subscribe(DOMid => {
-      this.scrollToId(DOMid);
-    });
+  constructor(
+    private config: NgsRevealConfig) {
     config.duration = 10000;
     config.easing = 'cubic-bezier(0.645, 0.045, 0.355, 1)';
   }
@@ -27,10 +25,13 @@ export class AppComponent implements OnDestroy {
     this.souscription.unsubscribe();
   }
 
+  /* Fonction récupérant l'id et faisant le scroll vers l'élément voulu */
   scrollToId(id) {
-    const DOMelement = document.getElementById(id);
-    DOMelement.children[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    return;
+    const el: HTMLElement|null = document.getElementById(id);
+    if (el) {
+      setTimeout(() =>
+        el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 0);
+    }
   }
 
 

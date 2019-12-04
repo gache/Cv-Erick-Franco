@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ScrollEventService } from 'src/app/services/scroll-event.service';
 
 @Component({
@@ -7,13 +7,14 @@ import { ScrollEventService } from 'src/app/services/scroll-event.service';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
+  @Output() scrollToParent: EventEmitter<string> = new EventEmitter();
 
   constructor(private scrollEventService: ScrollEventService) { }
 
   isInImage = true;
 
   ngOnInit() {
-    window.addEventListener("scroll", ($event) => { this.onScroll($event) });
+    window.addEventListener('scroll', ($event) => { this.onScroll($event); });
   }
 
   onScroll($event) {
@@ -24,8 +25,9 @@ export class NavBarComponent implements OnInit {
     }
   }
 
-  scroll(id: string) {
-    this.scrollEventService.sendMessage(id);
+  scrollTo(id, ev) {
+    ev.preventDefault();
+    this.scrollToParent.emit(id);
   }
 
 
