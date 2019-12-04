@@ -67,7 +67,7 @@
                 <label class="col-2 col-form-label text-uppercase" for="message"> Message</label>
                 <div class="col-md-5">
                     <textarea class="form-control col-9 " id="message " rows="5" formControlName="message" placeholder="Nous aimerions vous contacter à fin de ...."> </textarea>
-                    <div class=" btn btn-danger m-auto form-control col-9 " rows="5" *ngIf="!formulaire.controls['message'].valid && formulaire.controls['message'].touched">
+                    <div class=" btn btn-danger m-auto form-control col-9 "  *ngIf="!formulaire.controls['message'].valid && formulaire.controls['message'].touched">
                         {{ messageAlert5 }}
                     </div>
                 </div>
@@ -76,7 +76,7 @@
             <div class="form-group row ">
                 <label class="col-2 col-form-label ">&nbsp;</label>
                 <div class="input-group col-md-9 ">
-                    <button type="submit " class="btn btn-primary ">
+                    <button type="submit" class="btn btn-primary ">
               Envoyer
             </button>
                 </div>
