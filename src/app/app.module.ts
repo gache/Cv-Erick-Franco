@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 // Modules
-import {NgsRevealModule} from 'ngx-scrollreveal';
-import {NgsRevealConfig} from 'ngx-scrollreveal';
+import { NgsRevealModule } from 'ngx-scrollreveal';
+import { NgsRevealConfig } from 'ngx-scrollreveal';
 import { StickyNavModule } from 'ng2-sticky-nav';
 
 

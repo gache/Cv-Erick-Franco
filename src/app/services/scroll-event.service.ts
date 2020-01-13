@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -8,18 +8,18 @@ export class ScrollEventService {
 
   constructor() { }
 
-  private subject = new Subject<any>();
+  // private subject = new Subject<any>();
 
-  sendMessage(message: string) {
-      this.subject.next(message);
-  }
+  // sendMessage(message: string) {
+  //     this.subject.next(message);
+  // }
 
-  clearMessages() {
-      this.subject.next();
-  }
+  // clearMessages() {
+  //     this.subject.next();
+  // }
 
-  getMessage(): Observable<any> {
-      return this.subject.asObservable();
-  }
+  // getMessage(): Observable<any> {
+  //     return this.subject.asObservable();
+  // }
 
 }

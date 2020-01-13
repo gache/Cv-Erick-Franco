@@ -1,5 +1,5 @@
 import { Component, OnDestroy, ViewChild, ElementRef, ViewChildren } from '@angular/core';
-import { ScrollEventService } from './services/scroll-event.service';
+// import { ScrollEventService } from './services/scroll-event.service';
 import { Subscription } from 'rxjs';
 import { NgsRevealConfig } from 'ngx-scrollreveal';
 import { CompileShallowModuleMetadata } from '@angular/compiler';

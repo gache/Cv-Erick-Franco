@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
-
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family:'Montserrat', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
-section{
+section {
     background-color: #f2f2f2;
 }
+
+h1 {
+    font-size: 2.688em;
+}
+
+
 /* Animation CSS des fleches */
+
 
 /* h1{
     position: relative;
@@ -44,16 +49,16 @@ h1::after{
     right: 360px;
 } */
 
-.Timeline{
+.Timeline {
     position: relative;
     margin: 50px auto;
-    padding:24px;
+    padding: 24px;
     max-width: 1000px;
     box-sizing: border-box;
 }
 
-.Timeline::before{
-    content:'';
+.Timeline::before {
+    content: '';
     position: absolute;
     left: 50%;
     width: 2px;
@@ -75,20 +80,19 @@ h1::after{
     box-sizing: border-box;
 }
 
-.Timeline ul li:nth-child(odd){
+.Timeline ul li:nth-child(odd) {
     float: left;
     text-align: right;
     clear: both;
 }
-.Timeline ul li:nth-child(even){
+
+.Timeline ul li:nth-child(even) {
     float: right;
     text-align: left;
     clear: both;
 }
 
-
-
-.content{
+.content {
     /* padding-bottom: 20px; */
     /* border: 5px solid; */
     /* border-radius: 17px;
@@ -96,14 +100,13 @@ h1::after{
     /* background: #88b7d5;
     border: 4px solid #c2e1f5; */
     margin-bottom: 20px;
-    
 }
 
-.Timeline ul li:nth-child(odd):before{
-    content:'';
+.Timeline ul li:nth-child(odd):before {
+    content: '';
     position: absolute;
     top: 24px;
-    right: -6px;
+    right: -7px;
     width: 10px;
     height: 10px;
     background: rgba(233, 33, 99, 1);
@@ -111,11 +114,11 @@ h1::after{
     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 }
 
-.Timeline ul li:nth-child(even):before{
-    content:'';
+.Timeline ul li:nth-child(even):before {
+    content: '';
     position: absolute;
     top: 24px;
-    left:-4px;
+    left: -3px;
     width: 10px;
     height: 10px;
     background: rgba(233, 33, 99, 1);
@@ -136,32 +139,32 @@ h1::after{
     text-align: justify;
 }
 
-.Timeline ul li .time h4{
+.Timeline ul li .time h4 {
     margin: 0;
     padding: 0;
     font-size: 14px;
-
 }
 
 .Timeline ul li:nth-child(odd) .time {
-position: absolute;
-top: 12px;
-right: -165px;
-margin: 0;
-padding: 8px 16px;
-background: rgba(233, 33, 99, 1);
-color: #fff;
-border-radius: 18px;
-box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
 }
+
 .Timeline ul li:nth-child(even) .time {
-position: absolute;
-top: 12px;
-left: -165px;
-margin: 0;
-padding: 8px 16px;
-background: rgba(233, 33, 99, 1);
-color: #fff;
-border-radius: 18px;
-box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
 }

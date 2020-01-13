@@ -1,39 +1,38 @@
-<section class="facts-section text-center py-5" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" style="background-position: 50% -3.7125px;">
+<section class="photoFond text-center py-5" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" style="background-position: 50% -3.7125px;">
     <div class="tt-overlay-bg">
         <div class="container-fl">
-            <p class="display-3"
-            [ngsReveal]="{
+            <p class="display-3" [ngsReveal]="{
                 reset: true,
                 duration: 3000,
                 interval: 600
               }">Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.</p>
-            <a href="#" class="btn btn-success btn-lg"> Contactez-moi</a>
+            <!-- <a href="#" class="btn btn-success btn-lg"> Contactez-moi</a> -->
         </div>
     </div>
 </section>
 <section>
     <div class="container wrapper">
-        <h2 class="text-center text-uppercase py-5" style="visibility: visible;" [ngsReveal]="{
+        <h1 class="py-5" style="visibility: visible;" [ngsReveal]="{
             reset: true,
             duration: 2000,
             interval: 600
-          }"> Contactez-moi </h2>
-    
-        <form [formGroup]="formulaire" (ngSubmit)="changement()">
+          }"> contactez-moi </h1>
+
+        <form class="container" [formGroup]="formulaire" (ngSubmit)="changement()">
             <div>
                 <div class="form-group row">
-                    <label class="col-2 col-form-label text-uppercase"> Nom </label>
+                    <label class="col-1 col-form-label "> Nom </label>
                     <div class="col-md-5">
                         <input class="form-control col-9" type="text" placeholder="Nom" formControlName="nom">
-    
+
                         <div class=" btn btn-danger m-auto form-control col-9 " rows="5" *ngIf="!formulaire.controls['nom'].valid && formulaire.controls['nom'].touched">
                             {{ messageAlert1 }}
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="form-group row">
-                    <label class="col-2 col-form-label text-uppercase">Prénom</label>
+                    <label class="col-1 col-form-label ">Prénom</label>
                     <div class="col-md-5">
                         <input class="form-control col-9" type="text" placeholder="Prénom" formControlName="prenom">
                         <div class=" boton btn btn-danger m-auto form-control col-9 " rows="5" *ngIf="!formulaire.controls['prenom'].valid && formulaire.controls['prenom'].touched">
@@ -41,11 +40,11 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
-    
+
             <div class="form-group row">
-                <label class="col-2 col-form-label text-uppercase">Email</label>
+                <label class="col-1 col-form-label ">Email</label>
                 <div class="col-md-5">
                     <input class="form-control col-9" type="email" placeholder="lille@gmail.com" formControlName="mail">
                     <div class=" btn btn-danger m-auto form-control col-9 " rows="5" *ngIf="!formulaire.controls['mail'].valid && formulaire.controls['mail'].touched">
@@ -54,7 +53,7 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-2 col-form-label text-uppercase">Sujet</label>
+                <label class="col-1 col-form-label ">Sujet</label>
                 <div class="col-md-5">
                     <input class="form-control col-9" type="email" placeholder="Entretien d'embauche" formControlName="sujet">
                     <div class=" btn btn-danger m-autoform-control col-9 " rows="5" *ngIf="!formulaire.controls['sujet'].valid && formulaire.controls['sujet'].touched">
@@ -62,30 +61,30 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="form-group row ">
-                <label class="col-2 col-form-label text-uppercase" for="message"> Message</label>
+                <label class="col-1 col-form-label message " for="message" rowspan="5"> Message</label>
                 <div class="col-md-5">
                     <textarea class="form-control col-9 " id="message " rows="5" formControlName="message" placeholder="Nous aimerions vous contacter à fin de ...."> </textarea>
-                    <div class=" btn btn-danger m-auto form-control col-9 "  *ngIf="!formulaire.controls['message'].valid && formulaire.controls['message'].touched">
+                    <div class=" btn btn-danger m-auto form-control col-9 " *ngIf="!formulaire.controls['message'].valid && formulaire.controls['message'].touched">
                         {{ messageAlert5 }}
                     </div>
                 </div>
             </div>
-    
+
             <div class="form-group row ">
-                <label class="col-2 col-form-label ">&nbsp;</label>
+                <label class="col-1 col-form-label ">&nbsp;</label>
                 <div class="input-group col-md-9 ">
                     <button type="submit" class="btn btn-primary ">
-              Envoyer
-            </button>
+                        Envoyer
+                    </button>
                 </div>
             </div>
-    
+
         </form>
-    
+
         {{formulaire.valid}}
-    
+
     </div>
 
 </section>

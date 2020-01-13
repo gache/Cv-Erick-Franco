@@ -3,6 +3,7 @@ import { Projet } from '../entities/projets';
 
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -26,7 +27,7 @@ export class ProjetService {
       url: 'https://github.com/gache/portafolio-angular',
     },
     {
-      nom: 'Creation Formulaire Angular',
+      nom: 'Creation Formulaire avec Angular',
       description: 'lorem ipsum  This card has supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
       url: 'https://github.com/gache/portafolio-angular',
     },
@@ -43,7 +44,7 @@ export class ProjetService {
   ]);
 
   constructor() {
-    console.log('Servicio Listo');
+    console.log('service prêt');
    }
 
    getProjet(): Projet[]{

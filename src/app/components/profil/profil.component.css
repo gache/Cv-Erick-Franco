@@ -1,7 +1,7 @@
-
 section {
-    text-align: center;
+    /* text-align: center; */
 }
+
 
 /* photo de fond */
 
@@ -29,19 +29,20 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
-
 }
 
 
 /* Button */
 
- p, h1, a{
+p,
+h1,
+a {
     /* font-family: Montserrat, serif, sans-serif; */
-    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     color: rgba(233, 33, 99, 1);
-    
- }
+    text-transform: capitalize;
+}
+
 .btn {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
@@ -51,7 +52,7 @@ section {
     border-radius: 80px;
     line-height: 60px;
     text-align: center;
-    border: 3px solid rgba(233, 33, 99, 1);;
+    border: 3px solid rgba(233, 33, 99, 1);
     display: block;
     text-decoration: none;
     color: rgba(233, 33, 99, 1);
@@ -59,7 +60,6 @@ section {
     overflow: hidden;
     background: transparent;
     /* transition: .3s; */
-
 }
 
 .btn::before {
@@ -67,11 +67,11 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
-    background:rgba(233, 33, 99, 1);
+    background: rgba(233, 33, 99, 1);
     top: -100%;
-    left: 0 ;
+    left: 0;
     z-index: -1;
-    transition: .3s; 
+    transition: .3s;
 }
 
 .btn::after {
@@ -81,9 +81,9 @@ section {
     position: absolute;
     background: rgba(233, 33, 99, 1);
     top: -100%;
-    left: 0 ;
+    left: 0;
     z-index: -1;
-    transition: .3s; 
+    transition: .3s;
 }
 
 .btn:hover {
@@ -93,7 +93,7 @@ section {
 .btn:hover:before {
     top: 0;
 }
+
 .btn:hover:after {
     top: 0;
 }
-
