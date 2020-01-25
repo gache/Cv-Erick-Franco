@@ -36,73 +36,14 @@
                 <h2 class="text-center m-auto py-3">Diplôme et Formations</h2>
                 <div class="Timeline">
                     <ul>
-                        <li>
+                        <li *ngFor="let items of listDiplome">
                             <div class="content">
-                                <h3>Concepteur Développeur Web Niveau II Bac +3</h3>
+                                <h3>{{ items.nomDiplome }}</h3>
                                 <p>
-                                    Formation dans le cadre du Fongecif à Aston école informatique, Lille, France
+                                    {{ items.description }}
                                 </p>
                                 <div class="time">
-                                    <h4>Juillet 2019</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>
-                                    Apprendre la programmation en JAVA(de débutant à avancé)
-                                </h3>
-                                <p>
-                                    Formation à distance avec la plataforme Udemy
-                                </p>
-                                <div class="time">
-                                    <h4>Avril 2019</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Angular de Zero à expert</h3>
-                                <p>
-                                    Formation à distance avec la plataforme Udemy
-                                </p>
-                                <div class="time">
-                                    <h4>Mars 2019</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Programmation pour les débutants - les premiers pas</h3>
-                                <p>
-                                    Formation à distance avec la plataforme Udemy
-                                </p>
-                                <div class="time">
-                                    <h4>Janvier 2019</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Master 2 professionnel Solidarité Internationale</h3>
-                                <p>
-                                    Formation à l'université Lille 2, à Lille, France
-                                </p>
-                                <div class="time">
-                                    <h4>Décembre 2015</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>
-                                    Master 1 Sciences politiques-Politique européenne et internationale
-                                </h3>
-                                <p>
-                                    Formation à l'université Lille 2, à Lille, France
-                                </p>
-                                <div class="time">
-                                    <h4>Juin 2014</h4>
+                                    <h4>{{ items.annee }}</h4>
                                 </div>
                             </div>
                         </li>
