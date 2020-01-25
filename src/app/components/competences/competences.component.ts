@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjetService } from '../../services/projet.service';
-import { Projet } from '../../entities/projets';
+import { ProjetInterface } from '../../entities/projets';
 
 
 
@@ -11,7 +11,7 @@ import { Projet } from '../../entities/projets';
 })
 export class CompetencesComponent implements OnInit {
 
-  projets: Projet[]= [];
+  projets: ProjetInterface[] = [];
 
   constructor(private projetServices: ProjetService) {
     this.projets = this.projetServices.getProjet();

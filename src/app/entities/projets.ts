@@ -1,6 +1,6 @@
 
 
-export interface Projet{
+export interface ProjetInterface{
   nom: string;
   description: string;
   url: any;

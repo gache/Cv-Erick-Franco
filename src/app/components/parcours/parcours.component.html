@@ -6,48 +6,17 @@
                 <h2 class=" text-center m-auto py-5">EXPÉRIENCES PROFESSIONNELLES</h2>
                 <div class="Timeline m-auto py-3 ">
                     <ul>
-                        <li>
+                        <li *ngFor="let item of listParcours; let i = index">
                             <div class="content ">
-                                <h3>Développeur web</h3>
+                                <h3>{{ item.title }}</h3>
                                 <p>
-                                    Création d'une application web avec le Framework Angular. L’objectif de l’application est de connaître l’état de santé ou l’avancement des différents projets de l’équipe. Projet conçu avec la méthodologie Agile avec par exemple, la création des Persona,
-                                    les User stories. En plus tests réguliers avec les utilisateurs pour feedback immédiat.
+                                    {{ item.description }}
+                                    <br>
+                                    <a [routerLink]="[ 'experience1', i ] " class="btn btn-outline-primary"> Voir plus </a>
+                                    <!-- <button (click)="voirExperience(i)" type="button" class="btn btn-outline-primary">Voir plus </button> -->
                                 </p>
                                 <div class="time">
-                                    <h4>Juin 2019</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Technicien Support Informatique pour Maisons du monde</h3>
-                                <p>
-                                    Identification, analyse et traitement des demandes des utilisateurs, saisie de données, avec l'outil Easyvista.
-                                </p>
-                                <div class="time">
-                                    <h4>Avril 2017</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Chargé de mission droits humains</h3>
-                                <p>
-                                    Coordination du travail avec des ONG, rédaction de rapports économiques, organisation d’événements.
-                                </p>
-                                <div class="time">
-                                    <h4>Avril 2015</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Trésorier Association TEJE-Lille</h3>
-                                <p>
-                                    Montage de projets collectifs avec des bénévoles.
-                                </p>
-                                <div class="time">
-                                    <h4>Juin 2019</h4>
+                                    <h4>{{ item.date }}</h4>
                                 </div>
                             </div>
                         </li>

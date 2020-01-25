@@ -25,16 +25,16 @@
 
             <div class="col-md-4 col-md-push-8 py-5">
                 <div class="card w-100">
-                    <img class="card-img-top" src="../../../assets/img/photo3.jpg" alt="Erick Franco">
+                    <img class="card-img-top" src="assets/img/photo3.jpg" alt="Erick Franco">
                     <div class="card-body">
-                        <h3 class="card-title text-center ">Erick Franco</h3>
-                        <p class="card-text text-left"> <strong>Ville: </strong> Lille France</p>
+                        <h3 class="card-title text-center ">{{ informationP.nom }}</h3>
+                        <p class="card-text text-left"> <strong>Ville: </strong> {{ informationP.ville }}</p>
                         <hr>
-                        <p class="card-text text-left"> <strong>Nationalité: </strong>Français</p>
+                        <p class="card-text text-left"> <strong>Nationalité: </strong>{{ informationP.nationalite }}</p>
                         <hr>
-                        <p class="card-text text-left"> <strong>Téléphone: </strong> (+33) 659655786</p>
+                        <p class="card-text text-left"> <strong>Téléphone: </strong> {{ informationP.telephone }}</p>
                         <hr class="uk-width-8-10">
-                        <p class="card-text text-left"> <strong>Email: </strong> erickfrancodelgado@hotmail.com</p>
+                        <p class="card-text text-left"> <strong>Email: </strong> {{ informationP.mail }}</p>
                     </div>
                 </div>
             </div>

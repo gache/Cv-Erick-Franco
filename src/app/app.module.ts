@@ -1,8 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Importation de la route
 import { AppRoutingModule } from './app-routing.module';
+
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+// Importation des Service
+
+import { ParcoursService } from './services/parcours.service';
+import { ProjetService } from './services/projet.service';
+
 // Modules
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { NgsRevealConfig } from 'ngx-scrollreveal';
@@ -20,6 +28,8 @@ import { CompetencesComponent } from './components/competences/competences.compo
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { PropoComponent } from './components/propo/propo.component';
 import { from } from 'rxjs';
+import { Experience1Component } from './components/experience1/experience1.component';
+
 
 
 
@@ -34,7 +44,8 @@ import { from } from 'rxjs';
     ContactComponent,
     CompetencesComponent,
     ReseauxComponent,
-    PropoComponent
+    PropoComponent,
+    Experience1Component
 
   ],
   imports: [
@@ -45,7 +56,11 @@ import { from } from 'rxjs';
     NgsRevealModule,
     StickyNavModule
   ],
-  providers: [NgsRevealConfig],
+  providers: [
+  NgsRevealConfig,
+  ParcoursService,
+  ProjetService
+ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

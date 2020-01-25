@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Projet } from '../entities/projets';
+import { ProjetInterface } from '../entities/projets';
 
 
 
@@ -9,7 +9,8 @@ import { Projet } from '../entities/projets';
 })
 export class ProjetService {
 
-  projetRealise: Projet[] = ([
+
+  projetRealise: ProjetInterface[] = ([
     {
       nom: 'Projet Heroes',
       description: 'lorem ipsum  This card has supporting text below as a natural lead-in to additional content.',
@@ -44,10 +45,11 @@ export class ProjetService {
   ]);
 
   constructor() {
-    console.log('service prêt');
+    // console.log('service prêt');
    }
 
-   getProjet(): Projet[]{
+   getProjet(): ProjetInterface[]{
      return this.projetRealise;
    }
+
 }
