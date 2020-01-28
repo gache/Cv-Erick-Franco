@@ -22,7 +22,7 @@ export class LangagesService {
   langageDeux: any [] = [
     {
       langage2: 'NodeJS',
-      porcentage: '50%'
+      porcentage: '40%'
     },
     {
       langage2: 'Javascript',

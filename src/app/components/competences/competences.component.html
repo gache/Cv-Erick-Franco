@@ -6,6 +6,7 @@
       interval: 600}">
             compétences
         </h1>
+
     </div>
     <div class="row flex-container">
         <div class="  col-md-6  py-3">
@@ -15,7 +16,7 @@
                         {{item.langage}}
                     </h3>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" role="progressbar" [ngStyle]="{'width': item.porcentage}" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                             <span>{{ item.porcentage }}</span>
                         </div>
                     </div>
@@ -29,7 +30,7 @@
                         {{item2.langage2}}
                     </h3>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" role="progressbar" [ngStyle]=" {'width': item2.porcentage} " aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                             <span>{{ item2.porcentage }}</span>
                         </div>
                     </div>
