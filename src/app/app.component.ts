@@ -26,13 +26,13 @@ export class AppComponent implements OnDestroy {
   }
 
   /* Fonction récupérant l'id et faisant le scroll vers l'élément voulu */
-  scrollToId(id) {
-    const el: HTMLElement|null = document.getElementById(id);
-    if (el) {
-      setTimeout(() =>
-        el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 0);
-    }
-  }
+  // scrollToId(id) {
+  //   const el: HTMLElement|null = document.getElementById(id);
+  //   if (el) {
+  //     setTimeout(() =>
+  //       el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 0);
+  //   }
+  // }
 
 
 }

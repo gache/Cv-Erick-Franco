@@ -8,11 +8,11 @@
                     <ul>
                         <li *ngFor="let item of listParcours; let i = index">
                             <div class="content ">
-                                <h3>{{ item.title }}</h3>
+                                <h3>{{ item.titre }}</h3>
                                 <p>
                                     {{ item.description }}
                                     <br>
-                                    <a [routerLink]="[ 'experience1', i ] " class="btn btn-outline-primary"> Voir plus </a>
+                                    <a [routerLink]="[ '/experience1', i ] " class="btn btn-outline-primary"> Voir plus </a>
                                     <!-- <button (click)="voirExperience(i)" type="button" class="btn btn-outline-primary">Voir plus </button> -->
                                 </p>
                                 <div class="time">

@@ -3,6 +3,10 @@ section {
     background-color: #f2f2f2;
 }
 
+.container {
+    margin-top: 20px
+}
+
 .competences {
     /* background: url(../../../assets/img/photo6.jpg) no-repeat center 50%; */
     background-color: #000000;
@@ -43,6 +47,7 @@ section {
 h1 {
     font-size: 2.688em;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -61,12 +66,6 @@ h3 {
 p {
     font-family: 'Montserrat', sans-serif;
 }
-
-
-/* .row:before {
-  display: table;
-  content: " ";
-} */
 
 
 /* alineation de la barre de chargement */
@@ -91,9 +90,15 @@ p {
     position: relative;
 }
 
+
+/*************************************** Projet ***************************************/
+
 .card-title {
     color: rgba(233, 33, 99, 1);
 }
+
+
+/* Bouton des cards */
 
 .btn-primary {
     font-family: "Lato", sans-serif;
@@ -173,9 +178,6 @@ p {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        /* flex-direction: column;
-        align-items: flex-start; 
-        justify-content: center */
     }
     .card {
         flex: 0 1 calc(50% - 1rem);

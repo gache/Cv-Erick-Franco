@@ -28,7 +28,7 @@ export class ParcoursComponent implements OnInit {
 
   ngOnInit() {
   }
-  voirExperience(idx: number) {
-    this.router.navigate(['experience1', idx]);
-  }
+  // voirExperience(idx: number) {
+  //   this.router.navigate(['experience1', idx]);
+  // }
 }

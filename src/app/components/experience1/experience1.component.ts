@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ParcoursService } from '../../services/parcours.service';
+import { ActivatedRoute } from '@angular/router';
+import { ParcoursInterface } from '../../entities/parcours';
 
 @Component({
   selector: 'app-experience1',
@@ -8,8 +10,14 @@ import { ParcoursService } from '../../services/parcours.service';
 })
 export class Experience1Component implements OnInit {
 
-  constructor(private parcour:ParcoursService ) { 
+  listParcours: any [] = [];
+  constructor(private parcourService: ParcoursService,
+              private activatedRoute: ActivatedRoute, ) {
 
+    this.activatedRoute.params.subscribe(params => {
+      this.listParcours = this.parcourService.getParcours2( params ['id']);
+      // console.log(params ['id']);
+    });
   }
 
   ngOnInit() {

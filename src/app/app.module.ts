@@ -7,9 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 // Importation des Service
-
 import { ParcoursService } from './services/parcours.service';
 import { ProjetService } from './services/projet.service';
+import { DiplomeService } from './services/diplome.service';
+import { LangagesService } from './services/langages.service';
+
 
 // Modules
 import { NgsRevealModule } from 'ngx-scrollreveal';
@@ -29,6 +31,7 @@ import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { PropoComponent } from './components/propo/propo.component';
 import { from } from 'rxjs';
 import { Experience1Component } from './components/experience1/experience1.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -45,7 +48,8 @@ import { Experience1Component } from './components/experience1/experience1.compo
     CompetencesComponent,
     ReseauxComponent,
     PropoComponent,
-    Experience1Component
+    Experience1Component,
+    HomeComponent
 
   ],
   imports: [
@@ -59,7 +63,9 @@ import { Experience1Component } from './components/experience1/experience1.compo
   providers: [
   NgsRevealConfig,
   ParcoursService,
-  ProjetService
+  ProjetService,
+  DiplomeService,
+  LangagesService
  ],
   bootstrap: [AppComponent]
 })
