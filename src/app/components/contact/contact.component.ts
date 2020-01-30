@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,28 +7,29 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+ // formulaire 
   formulaire: FormGroup;
+// Message d'erreur sur les input
   messageAlert1: string = 'Le nom est necessaire';
   messageAlert2: string = 'Le Prenom est necessaire';
   messageAlert3: string = 'Le Mail est necessaire';
   messageAlert4: string = 'Le sujet est necessaire';
   messageAlert5: string = 'Le message est necessaire';
 
-  constructor() {
-    this.formulaire = new FormGroup({
+  constructor(private formBuilder: FormBuilder ) {
 
-      nom: new FormControl('', [Validators.required,
-      Validators.minLength(3)]),
-      prenom: new FormControl('', [Validators.required,
-      Validators.minLength(3)]),
-      mail: new FormControl('', [Validators.required,
-      Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$'),
-      ]),
-      sujet: new FormControl('', [Validators.required,
-      Validators.minLength(3)]),
+    this.formulaire = this.formBuilder.group ({
+
+      nom:     new FormControl('', [Validators.required,
+                                    Validators.minLength(3)]),
+      prenom:  new FormControl('', [Validators.required,
+                                    Validators.minLength(3)]),
+      mail:    new FormControl('', [Validators.required,
+                                    Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$'),]),
+      sujet:   new FormControl('', [Validators.required,
+                                    Validators.minLength(3)]),
       message: new FormControl('', [Validators.required,
-      Validators.minLength(5), Validators.maxLength(500)]),
+                                    Validators.minLength(5), Validators.maxLength(500)]),
     });
 
     this.formulaire.controls['nom'].valueChanges
@@ -40,7 +41,10 @@ export class ContactComponent implements OnInit {
   changement() {
     console.log(this.formulaire.value);
     console.log(this.formulaire);
+  }
 
+  clear() {
+    this.formulaire.reset();
   }
 
   ngOnInit() {

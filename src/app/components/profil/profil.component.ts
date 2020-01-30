@@ -9,15 +9,15 @@ export class ProfilComponent implements OnInit {
 
   @Output() scrollToParent: EventEmitter<string> = new EventEmitter();
 
-  constructor() { }
+  constructor() { 
+    this.scrollToParent = new EventEmitter();
+  }
 
   ngOnInit() {
   }
 
   scrollTo(id) {
     this.scrollToParent.emit(id);
-    console.log("hola");
-    
   }
 
 }

@@ -15,7 +15,7 @@ export class Experience1Component implements OnInit {
               private activatedRoute: ActivatedRoute, ) {
 
     this.activatedRoute.params.subscribe(params => {
-      this.listParcours = this.parcourService.getParcours2( params ['id']);
+      this.listParcours = this.parcourService.getParcours2( params [' id ']);
       // console.log(params ['id']);
     });
   }

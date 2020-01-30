@@ -14,40 +14,57 @@ h1 {
 }
 
 
-/* Animation CSS des fleches */
+/* Bouton */
 
-
-/* h1{
+.btn-outline-primary {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    border-radius: 80px;
+    text-align: center;
+    border: 3px solid rgba(233, 33, 99, 1);
+    display: inline-flex;
+    text-decoration: none;
+    color: rgba(233, 33, 99, 1) !important;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
-    
+    overflow: hidden;
+    background: transparent;
 }
 
-h1::after, h1::before{
-    content: '';
+.btn-outline-primary::before {
+    content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
-    width: 120px;
-    height: 4px;
-    background-color: #000000;
-    top: 0.6em;
-    transform: scale(0);
-    transition: all 0.3s ease-in;
-    
-}
-h1:hover::before, h1:hover::after{
-    transform: scale(1);
+    background: rgba(233, 33, 99, 1) !important;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
 }
 
-h1::before{
-    left: 360px;
+.btn-outline-primary::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(233, 33, 99, 1) !important;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
 }
-h1::after{
-    right: 360px;
-} */
+
+.btn-outline-primary:hover {
+    color: #fff;
+}
+
+.btn-outline-primary:hover:before {
+    top: 0;
+}
+
+.btn-outline-primary:hover:after {
+    top: 0;
+}
 
 .Timeline {
     position: relative;

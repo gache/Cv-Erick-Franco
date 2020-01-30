@@ -12,7 +12,7 @@ export class PropoComponent implements OnInit {
   ville:       'Lille France',
   nationalite: 'Français',
   telephone:   '(+33) 6 59 65 57 86',
-  mail:        'erickfrancodelgado@hotmail.com'
+  mail: 'erickfrancodelgado@hotmail.com'
   };
   constructor() { }
 

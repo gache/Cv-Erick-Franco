@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ParcoursService } from '../../services/parcours.service';
 import { DiplomeService } from '../../services/diplome.service';
 
-import { Router } from '@angular/router';
 
 
 
@@ -18,8 +17,7 @@ export class ParcoursComponent implements OnInit {
   listDiplome: any[] = [];
 
   constructor(private _parcours: ParcoursService,
-              private diplome: DiplomeService,
-              private router: Router, ) {
+              private diplome: DiplomeService ) {
    // 
     this.listParcours = this._parcours.getParcours();
     // console.log(this.listParcours);
@@ -28,7 +26,5 @@ export class ParcoursComponent implements OnInit {
 
   ngOnInit() {
   }
-  // voirExperience(idx: number) {
-  //   this.router.navigate(['experience1', idx]);
-  // }
+
 }

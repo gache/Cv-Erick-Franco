@@ -17,6 +17,7 @@ import { LangagesService } from './services/langages.service';
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { NgsRevealConfig } from 'ngx-scrollreveal';
 import { StickyNavModule } from 'ng2-sticky-nav';
+import {ProgressBarModule} from 'angular-progress-bar';
 
 
 // Components
@@ -58,7 +59,8 @@ import { HomeComponent } from './components/home/home.component';
     FormsModule,
     ReactiveFormsModule,
     NgsRevealModule,
-    StickyNavModule
+    StickyNavModule,
+    ProgressBarModule
   ],
   providers: [
   NgsRevealConfig,
