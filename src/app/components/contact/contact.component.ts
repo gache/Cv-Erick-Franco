@@ -10,11 +10,11 @@ export class ContactComponent implements OnInit {
  // formulaire 
   formulaire: FormGroup;
 // Message d'erreur sur les input
-  messageAlert1: string = 'Le nom est necessaire';
-  messageAlert2: string = 'Le Prenom est necessaire';
-  messageAlert3: string = 'Le Mail est necessaire';
-  messageAlert4: string = 'Le sujet est necessaire';
-  messageAlert5: string = 'Le message est necessaire';
+  messageAlert1: string = 'Le nom est necessaire dans ce champ';
+  messageAlert2: string = 'Le Prenom est necessaire dans ce champ';
+  messageAlert3: string = 'Le Mail est necessaire dans ce champ';
+  messageAlert4: string = 'Le sujet est necessaire dans ce champ';
+  messageAlert5: string = 'Le message est necessaire dans ce champ';
 
   constructor(private formBuilder: FormBuilder ) {
 

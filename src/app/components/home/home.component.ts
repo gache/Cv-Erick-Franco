@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
 
   /* Fonction récupérant l'id et faisant le scroll vers l'élément voulu */
   scrollToId(id) {
+    console.log(id);
     const el: HTMLElement|null = document.getElementById(id);
     if (el) {
       setTimeout(() =>
