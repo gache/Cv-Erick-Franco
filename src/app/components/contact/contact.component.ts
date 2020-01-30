@@ -41,6 +41,11 @@ export class ContactComponent implements OnInit {
   changement() {
     console.log(this.formulaire.value);
     console.log(this.formulaire);
+    // Appel API pour enregistrer le message
+    // TODO
+
+    // Message enregistré, vider le formulaire
+    // this.clear();
   }
 
   clear() {

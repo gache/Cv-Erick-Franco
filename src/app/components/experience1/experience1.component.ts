@@ -10,7 +10,7 @@ import { ParcoursInterface } from '../../entities/parcours';
 })
 export class Experience1Component implements OnInit {
 
-  listParcours: any [] = [];
+  listParcours: ParcoursInterface ;
   constructor(private parcourService: ParcoursService,
               private activatedRoute: ActivatedRoute, ) {
 

@@ -39,7 +39,7 @@ export class ParcoursService {
   getParcours(): ParcoursInterface[] {
     return this.parcour;
   }
-  getParcours2(index: string): ParcoursInterface[] {
+  getParcours2(index: string): ParcoursInterface {
     return this.parcour [index];
   }
 }
