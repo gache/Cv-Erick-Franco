@@ -18,7 +18,7 @@ export class ProfilComponent implements OnInit {
 
   scrollTo(id) {
     this.scrollToParent.emit(id);
-    return false;
+    // return false;
   }
 
 }

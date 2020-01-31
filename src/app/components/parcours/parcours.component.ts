@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ParcoursService } from '../../services/parcours.service';
-import { DiplomeService } from '../../services/diplome.service';
+
 
 
 
@@ -16,12 +16,11 @@ export class ParcoursComponent implements OnInit {
   listParcours: any[] = [];
   listDiplome: any[] = [];
 
-  constructor(private _parcours: ParcoursService,
-              private diplome: DiplomeService ) {
+  constructor(private _parcours: ParcoursService ) {
    // 
     this.listParcours = this._parcours.getParcours();
     // console.log(this.listParcours);
-    this.listDiplome = this.diplome.getDiplome();
+
   }
 
   ngOnInit() {

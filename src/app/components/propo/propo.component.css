@@ -47,7 +47,7 @@ strong {
     flex-wrap: nowrap;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .objectif {
         flex: 0 0 70%;
     }

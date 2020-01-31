@@ -1,5 +1,9 @@
 /* Menu de navigation */
 
+a {
+    text-transform: uppercase;
+}
+
 .nav {
     position: sticky;
     top: 0;

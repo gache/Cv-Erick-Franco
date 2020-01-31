@@ -27,12 +27,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProfilComponent } from './components/profil/profil.component';
 import { ParcoursComponent } from './components/parcours/parcours.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { CompetencesComponent } from './components/competences/competences.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { PropoComponent } from './components/propo/propo.component';
 import { from } from 'rxjs';
-import { Experience1Component } from './components/experience1/experience1.component';
 import { HomeComponent } from './components/home/home.component';
+import { DiplomeComponent } from './components/diplome/diplome.component';
+import { LangagesComponent } from './components/langages/langages.component';
+import { ProjetsComponent } from './components/projets/projets.component';
+import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
 
 
 
@@ -46,11 +48,13 @@ import { HomeComponent } from './components/home/home.component';
     ProfilComponent,
     ParcoursComponent,
     ContactComponent,
-    CompetencesComponent,
     ReseauxComponent,
     PropoComponent,
-    Experience1Component,
-    HomeComponent
+    HomeComponent,
+    DiplomeComponent,
+    LangagesComponent,
+    ProjetsComponent,
+    DetailExperienceComponent
 
   ],
   imports: [

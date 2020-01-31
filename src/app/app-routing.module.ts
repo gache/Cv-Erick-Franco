@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Experience1Component } from './components/experience1/experience1.component';
 import { HomeComponent } from './components/home/home.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
 
 
 
 
 const ROUTES: Routes = [
   { path: 'Home', component: HomeComponent },
-  { path: 'contact/:id', component: ContactComponent },
-  { path: 'experience1/:id', component: Experience1Component },
+  { path: 'detail/:id', component: DetailExperienceComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'Home' }
 ];
 
