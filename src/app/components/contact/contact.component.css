@@ -102,6 +102,18 @@ label {
 } */
 
 
+/* Messages d'erreur du forms */
+
+.alert-danger{
+  color: rgba(233, 33, 99, 1);
+  border-color: rgba(233, 33, 99, 1);
+  margin-bottom: 5px;
+}
+
+.containerMessageError{
+padding: 3px;
+}
+
 /* Bouton envoyer */
 
 .btn {

@@ -11,12 +11,17 @@ import { ParcoursService } from './services/parcours.service';
 import { ProjetService } from './services/projet.service';
 import { DiplomeService } from './services/diplome.service';
 import { LangagesService } from './services/langages.service';
+import { DatafireService } from './services/datafire.service';
 
 
 // Modules
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { NgsRevealConfig } from 'ngx-scrollreveal';
 import { StickyNavModule } from 'ng2-sticky-nav';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+
 
 
 
@@ -64,14 +69,16 @@ import { DetailExperienceComponent } from './components/detail-experience/detail
     ReactiveFormsModule,
     NgsRevealModule,
     StickyNavModule,
- 
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [
   NgsRevealConfig,
   ParcoursService,
   ProjetService,
   DiplomeService,
-  LangagesService
+  LangagesService,
+  DatafireService
  ],
   bootstrap: [AppComponent]
 })
