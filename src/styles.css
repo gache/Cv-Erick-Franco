@@ -1,26 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+
 html {
     font-size: 15px;
+    scroll-behavior: smooth;
 }
 
 body {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background-color: #f2f2f2;
 }
 
-
-/* padding-bottom: 50px; */
+section {
+    text-align: left;
+}
 
 footer {
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
 }
 
+.section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+}
 
-/* Animaciones */
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 2px;
+}
 
+/* Animations */
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -36,18 +63,13 @@ footer {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.fadeIn {
-    animation-name: fadeIn;
-}
+.fadeIn { animation-name: fadeIn; }
 
-body>div:last-of-type {
-    visibility: hidden;
+/* Hide injected empty div from angular dev server */
+body > div:last-of-type:empty {
+    display: none;
 }

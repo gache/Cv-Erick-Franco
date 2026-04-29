@@ -1,91 +1,17 @@
-/*************************************** Projet ***************************************/
-
 section {
     box-sizing: border-box;
     background-color: #f2f2f2;
+    padding-bottom: 3rem;
 }
 
 h2 {
-    flex: 0 1 100%;
     text-align: center;
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
-    line-height: 24px;
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.card-title {
-    color: rgba(233, 33, 99, 1);
-}
-
-
-/* Bouton des cards */
-
-.btn-primary {
-    font-family: "Lato", sans-serif;
-    font-size: 17px;
-    border-radius: 80px;
-    text-align: center;
-    border: 3px solid rgba(233, 33, 99, 1);
-    display: inline-flex;
-    text-decoration: none;
-    color: rgba(233, 33, 99, 1) !important;
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-}
-
-.btn-primary::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(233, 33, 99, 1) !important;
-    top: -100%;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.btn-primary::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(233, 33, 99, 1) !important;
-    top: -100%;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    color: #fff;
-}
-
-.btn-primary:hover:before {
-    top: 0;
-}
-
-.btn-primary:hover:after {
-    top: 0;
-}
-
-
-/***************************** Cards **************************************/
-
-.card {
-    background-color: #f2f2f2;
-    border: 3px solid rgba(233, 33, 99, 1);
-    border-radius: 10%
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    margin-bottom: 2rem;
 }
 
 .container-flex {
@@ -94,27 +20,87 @@ p {
     padding: 1rem;
 }
 
+.card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid rgba(233, 33, 99, 0.4);
+    border-radius: 12px;
+    flex: 0 1 calc(33% - 1.2rem);
+    transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(233, 33, 99, 0.2);
+    transform: translateY(-4px);
+    border-color: rgba(233, 33, 99, 1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+}
+
 .card-title {
-    flex: 0 1 100%;
+    color: rgba(233, 33, 99, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
 }
 
 .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
     text-align: justify;
+    flex-grow: 1;
+    margin-bottom: 1rem;
 }
 
-@media (min-width: 480px) {
-    .card-columns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .card {
-        flex: 0 1 calc(50% - 1rem);
-        visibility: hidden;
-    }
-    @media (min-width: 768px) {
-        .card {
-            flex: 0 1 calc(30% - 1rem);
-        }
-    }
+.btn-primary {
+    font-family: "Lato", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid rgba(233, 33, 99, 1);
+    color: rgba(233, 33, 99, 1) !important;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+    align-self: flex-start;
+}
+
+.btn-primary:hover {
+    background: rgba(233, 33, 99, 1) !important;
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .card { flex: 0 1 calc(50% - 1.2rem); }
+}
+
+@media (max-width: 480px) {
+    .card { flex: 0 1 100%; }
 }

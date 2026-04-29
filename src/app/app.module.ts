@@ -34,7 +34,6 @@ import { ParcoursComponent } from './components/parcours/parcours.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { PropoComponent } from './components/propo/propo.component';
-import { from } from 'rxjs';
 import { HomeComponent } from './components/home/home.component';
 import { DiplomeComponent } from './components/diplome/diplome.component';
 import { LangagesComponent } from './components/langages/langages.component';

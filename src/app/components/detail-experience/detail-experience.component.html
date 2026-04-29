@@ -1,12 +1,12 @@
-<section>
-    <div class="photo container-flex">
-        <h1 class=" text-center py-5"> {{ listParcours.titre }} </h1>
-        <hr style="width: 1120px;">
-
-        <p> {{ listParcours.description2 }}</p>
-
-        <div class="bouton">
-            <a [routerLink]="['/Home']" class=" btn btn-primary"> Retourner</a>
-        </div>
+<section class="detail-section">
+  <div class="container py-5">
+    <h1 class="text-center mb-4">{{ listParcours.titre }}</h1>
+    <hr class="detail-divider" />
+    <p class="detail-text">{{ listParcours.description2 }}</p>
+    <div class="text-center mt-5">
+      <a [routerLink]="['/Home']" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Retour
+      </a>
     </div>
+  </div>
 </section>

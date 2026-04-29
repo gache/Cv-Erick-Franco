@@ -1,29 +1,27 @@
-<!-- Creation du titre de la page -->
-
-<section class=" container photo text-center  ">
-    <div class="cv ">
-        <!-- J'utulise la classe de Boostrap  pour afficher plus grand le tittre et la librarie ngsReveal pour faire des animation au texte  -->
-        <h1 class="display-1 " [ngsReveal]="{ 
-        reset: true,
-        duration: 550,
-        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
-        scale: 0.85}">
-            Developpeur web
-        </h1>
-        <h2 class="display-2" [ngsReveal]="{
-        reset: true,
-        duration: 1500,
-        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
-        scale: 0.85}">
-            ERICK FRANCO
-        </h2>
-        <!--  Creation du bouton -->
-        <a class="btn btn-success btn-lg" [ngsReveal]="{
-        reset: true,
-        duration: 2000,
-        delay: 500,
-        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
-        scale: 0.85}" (click)="scrollTo('contact')">
-      Contactez-moi</a>
-    </div>
+<section class="photo text-center">
+  <div class="cv">
+    <h1 class="display-1" [ngsReveal]="{
+      reset: false,
+      duration: 800,
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+      scale: 0.85}">
+      Développeur Web
+    </h1>
+    <h2 class="display-2" [ngsReveal]="{
+      reset: false,
+      duration: 1200,
+      delay: 200,
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+      scale: 0.85}">
+      Erick Franco
+    </h2>
+    <a class="btn btn-hero btn-lg" [ngsReveal]="{
+      reset: false,
+      duration: 1500,
+      delay: 400,
+      easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+      scale: 0.85}" (click)="scrollTo('contact')">
+      Contactez-moi
+    </a>
+  </div>
 </section>

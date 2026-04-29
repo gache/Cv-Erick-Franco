@@ -1,6 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Optional } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
 import { ContactInterfacer } from '../entities/contact';
 
 @Injectable({
@@ -10,12 +9,15 @@ export class DatafireService {
 
   private contact: AngularFirestoreCollection<ContactInterfacer>;
 
-  constructor(private firebase: AngularFirestore) {
-    this.contact = this.firebase.collection<ContactInterfacer>('contact');
+  constructor(@Optional() private firebase: AngularFirestore) {
+    if (this.firebase) {
+      this.contact = this.firebase.collection<ContactInterfacer>('contact');
+    }
   }
 
   garderMessage(newMessage: ContactInterfacer): void {
-    this.contact.add(newMessage);
-
+    if (this.contact) {
+      this.contact.add(newMessage);
+    }
   }
 }
